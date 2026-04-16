@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sagesh Adhikari | Ethical Hacker</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ░░ MATRIX CANVAS BACKGROUND ░░ -->
+  <canvas id="matrix"></canvas>
+
+  <!-- ░░ NAVBAR ░░ -->
+  <nav id="navbar">
+    <div class="nav-logo">&lt;SA /&gt;</div>
+    <ul class="nav-links">
+      <li><a href="#home">~/home</a></li>
+      <li><a href="#about">~/about</a></li>
+      <li><a href="#skills">~/skills</a></li>
+      <li><a href="#projects">~/projects</a></li>
+      <li><a href="#writeups">~/writeups</a></li>
+      <li><a href="#contact">~/contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ░░ HERO ░░ -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">
+        <span class="prompt">root@kali:~$</span>
+        <span class="typed-cmd" id="typed-cmd"></span>
+        <span class="cursor">█</span>
+      </p>
+      <h1 class="hero-name">Sagesh Adhikari</h1>
+      <h2 class="hero-role">
+        <span class="role-text" id="role-text"></span>
+      </h2>
+      <p class="hero-desc">
+        Ethical Hacking & Cybersecurity student at <span class="accent">Softwarica College</span>,
+        Nepal. I break things to understand how to fix them.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">30</span><span class="stat-label">Day Challenge</span></div>
+        <div class="stat"><span class="stat-num">6th</span><span class="stat-label">Semester</span></div>
+        <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Curiosity</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>scroll down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ░░ ABOUT ░░ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Hey! I'm <span class="accent">Sagesh Adhikari</span>, a cybersecurity enthusiast currently pursuing
+          Ethical Hacking & Cybersecurity at <span class="accent">Softwarica College</span>, Kathmandu, Nepal.</p>
+          <p>I'm passionate about finding vulnerabilities, understanding how systems work
+          under the hood, and building tools that make security testing more efficient.
+          Currently on a <span class="accent">30-day cybersecurity challenge</span> to sharpen my skills
+          across web app hacking, network pentesting, and tool development.</p>
+          <p>When I'm not breaking things, I'm building them — from loyalty card systems
+          to custom recon tools.</p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Kathmandu, Nepal</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-university"></i>
+              <span>Softwarica College</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Ethical Hacking & Cybersecurity</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-terminal"></i>
+              <span>Currently: 30-Day Challenge</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-terminal">
+          <div class="terminal-header">
+            <span class="t-btn red"></span>
+            <span class="t-btn yellow"></span>
+            <span class="t-btn green"></span>
+            <span class="t-title">sagesh@kali: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="t-prompt">$</span> cat about.txt</p>
+            <p class="t-output">Name      : Sagesh Adhikari</p>
+            <p class="t-output">Role      : Ethical Hacker (learning)</p>
+            <p class="t-output">College   : Softwarica College</p>
+            <p class="t-output">Semester  : 6th</p>
+            <p class="t-output">Location  : Kathmandu, Nepal</p>
+            <p class="t-output">Status    : <span class="t-green">Active — 30-day grind</span></p>
+            <br>
+            <p><span class="t-prompt">$</span> cat interests.txt</p>
+            <p class="t-output">- Web App Penetration Testing</p>
+            <p class="t-output">- Network Security</p>
+            <p class="t-output">- Bug Bounty Hunting</p>
+            <p class="t-output">- Security Tool Development</p>
+            <p class="t-output">- CTF Competitions</p>
+            <br>
+            <p><span class="t-prompt">$</span> <span class="t-cursor">█</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ SKILLS ░░ -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-bug"></i></div>
+          <h3>Penetration Testing</h3>
+          <div class="skill-tags">
+            <span>Nmap</span><span>Metasploit</span><span>Burp Suite</span>
+            <span>Nikto</span><span>SQLMap</span><span>Gobuster</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+          <h3>Networking & Analysis</h3>
+          <div class="skill-tags">
+            <span>Wireshark</span><span>TCP/IP</span><span>DNS</span>
+            <span>Nmap</span><span>Netcat</span><span>Enum4linux</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fab fa-linux"></i></div>
+          <h3>Operating Systems</h3>
+          <div class="skill-tags">
+            <span>Kali Linux</span><span>Ubuntu</span><span>Bash</span>
+            <span>Windows</span><span>VirtualBox</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Bash</span><span>HTML/CSS</span>
+            <span>JavaScript</span><span>SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web App Security</h3>
+          <div class="skill-tags">
+            <span>OWASP Top 10</span><span>SQLi</span><span>XSS</span>
+            <span>IDOR</span><span>DVWA</span><span>Burp Suite</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fas fa-flag"></i></div>
+          <h3>CTF & Practice</h3>
+          <div class="skill-tags">
+            <span>HackTheBox</span><span>TryHackMe</span><span>PicoCTF</span>
+            <span>PortSwigger</span><span>VulnHub</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ PROJECTS ░░ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-folder-open accent"></i>
+            <div class="project-links">
+              <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3>Bakery Loyalty Card System</h3>
+          <p>A full loyalty card management system built for a local bakery.
+          Tracks customer points, rewards, and transaction history.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Database</span><span>UI</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-folder-open accent"></i>
+            <div class="project-links">
+              <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Recon Automation Script</h3>
+          <p>Automated reconnaissance tool that chains subdomain enumeration,
+          port scanning, and HTTP probing into a single workflow.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Bash</span><span>Nmap</span>
+          </div>
+        </div>
+
+        <div class="project-card coming-soon">
+          <div class="project-header">
+            <i class="fas fa-folder-open accent"></i>
+          </div>
+          <h3>Port Scanner <span class="badge">Coming Soon</span></h3>
+          <p>Custom TCP port scanner with threading, banner grabbing,
+          and CSV export — built from scratch without Nmap.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Sockets</span><span>Threading</span>
+          </div>
+        </div>
+
+        <div class="project-card coming-soon">
+          <div class="project-header">
+            <i class="fas fa-folder-open accent"></i>
+          </div>
+          <h3>CTF Writeup Bot <span class="badge">Coming Soon</span></h3>
+          <p>Automated tool to format and publish CTF writeups to GitHub
+          with proper markdown structure and tagging.</p>
+          <div class="project-tech">
+            <span>Python</span><span>GitHub API</span><span>Markdown</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ WRITEUPS / BLOG ░░ -->
+  <section id="writeups" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> Blog & Writeups</h2>
+      <div class="writeups-grid">
+
+        <div class="writeup-card">
+          <div class="writeup-meta">
+            <span class="tag tag-active">Day 1</span>
+            <span class="date">Apr 13, 2026</span>
+          </div>
+          <h3>Metasploitable2 — Full Recon with Nmap</h3>
+          <p>Discovered 30 open ports including a root bindshell on port 1524,
+          vsftpd 2.3.4 backdoor, and Samba RCE vulnerability using Nmap -sV -sC.</p>
+          <a href="#" class="read-more">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="writeup-card coming">
+          <div class="writeup-meta">
+            <span class="tag">Coming Soon</span>
+          </div>
+          <h3>HackTheBox — First Machine Writeup</h3>
+          <p>Full walkthrough of my first HTB machine — recon, exploitation,
+          privilege escalation, and lessons learned.</p>
+          <a href="#" class="read-more disabled">Coming soon <i class="fas fa-lock"></i></a>
+        </div>
+
+        <div class="writeup-card coming">
+          <div class="writeup-meta">
+            <span class="tag">Coming Soon</span>
+          </div>
+          <h3>SQL Injection — From Manual to SQLMap</h3>
+          <p>Deep dive into SQL injection — manual UNION-based exploitation
+          on DVWA and automating with SQLMap.</p>
+          <a href="#" class="read-more disabled">Coming soon <i class="fas fa-lock"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CONTACT ░░ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title"><span class="accent">//</span> Contact</h2>
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <p>I'm always open to connecting with fellow security enthusiasts,
+          collaborating on CTFs, or just talking about hacking and tech.</p>
+          <div class="contact-links">
+            <a href="mailto:sagesh@example.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>sagesh@example.com</span>
+            </a>
+            <a href="https://github.com/" target="_blank" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>github.com/sagesh</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>linkedin.com/in/sagesh</span>
+            </a>
+            <a href="https://tryhackme.com/" target="_blank" class="contact-item">
+              <i class="fas fa-flag"></i>
+              <span>TryHackMe Profile</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <p>
+      <span class="prompt">root@sagesh:~$</span>
+      echo "Built by <span class="accent">Sagesh Adhikari</span> | 2026"
+    </p>
+    <p class="footer-sub">Softwarica College · Ethical Hacking & Cybersecurity</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
