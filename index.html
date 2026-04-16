@@ -264,78 +264,45 @@
       <div class="cert-gallery">
 
         <!-- CTF Certificate -->
-        <div class="cert-tile" onclick="openCert('certificates/CTF_Certificate.png')">
+        <div class="cert-tile cert-anim" style="--i:0" onclick="openCert('certificates/CTF_Certificate.png')">
           <div class="cert-img-wrap">
-            <img src="certificates/CTF_Certificate.png" alt="CTF Certificate" />
+            <img src="certificates/CTF_Certificate.png" alt="CTF Certificate" loading="lazy"/>
             <div class="cert-overlay">
-              <i class="fas fa-expand"></i>
-              <span>View Certificate</span>
+              <div class="cert-overlay-circle"><i class="fas fa-expand-alt"></i></div>
+              <span>Click to View</span>
             </div>
+            <div class="cert-shine"></div>
           </div>
           <div class="cert-tile-info">
-            <span class="cert-badge earned-badge">✓ Earned</span>
+            <span class="cert-badge earned-badge"><i class="fas fa-check-circle"></i> Earned</span>
             <h3>CTF Competition Certificate</h3>
             <p class="cert-issuer"><i class="fas fa-flag"></i> CTF Event</p>
           </div>
         </div>
 
         <!-- Splunk Certificate -->
-        <div class="cert-tile" onclick="openCert('certificates/splunk_page-0001.jpg')">
+        <div class="cert-tile cert-anim" style="--i:1" onclick="openCert('certificates/splunk_page-0001.jpg')">
           <div class="cert-img-wrap">
-            <img src="certificates/splunk_page-0001.jpg" alt="Splunk Certificate" />
+            <img src="certificates/splunk_page-0001.jpg" alt="Splunk Certificate" loading="lazy"/>
             <div class="cert-overlay">
-              <i class="fas fa-expand"></i>
-              <span>View Certificate</span>
+              <div class="cert-overlay-circle"><i class="fas fa-expand-alt"></i></div>
+              <span>Click to View</span>
             </div>
+            <div class="cert-shine"></div>
           </div>
           <div class="cert-tile-info">
-            <span class="cert-badge earned-badge">✓ Earned</span>
+            <span class="cert-badge earned-badge"><i class="fas fa-check-circle"></i> Earned</span>
             <h3>Splunk Fundamentals</h3>
             <p class="cert-issuer"><i class="fas fa-database"></i> Splunk</p>
           </div>
         </div>
 
-        <!-- ADBI Cybersecurity PDF -->
-        <div class="cert-tile cert-pdf" onclick="openCert('certificates/Cybersecurity–ADBI-E-Learning.pdf')">
-          <div class="cert-img-wrap pdf-wrap">
-            <div class="pdf-icon-display">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <div class="cert-overlay">
-              <i class="fas fa-file-pdf"></i>
-              <span>View Certificate</span>
-            </div>
-          </div>
-          <div class="cert-tile-info">
-            <span class="cert-badge earned-badge">✓ Earned</span>
-            <h3>Cybersecurity Fundamentals</h3>
-            <p class="cert-issuer"><i class="fas fa-university"></i> ADBI E-Learning</p>
-          </div>
-        </div>
-
-        <!-- GCED Certificate PDF -->
-        <div class="cert-tile cert-pdf" onclick="openCert('certificates/GCED certificate.pdf')">
-          <div class="cert-img-wrap pdf-wrap">
-            <div class="pdf-icon-display">
-              <i class="fas fa-award"></i>
-            </div>
-            <div class="cert-overlay">
-              <i class="fas fa-file-pdf"></i>
-              <span>View Certificate</span>
-            </div>
-          </div>
-          <div class="cert-tile-info">
-            <span class="cert-badge earned-badge">✓ Earned</span>
-            <h3>GCED Certificate</h3>
-            <p class="cert-issuer"><i class="fas fa-certificate"></i> GCED</p>
-          </div>
-        </div>
-
-        <!-- eJPT — Upcoming -->
-        <div class="cert-tile cert-planned">
+        <!-- eJPT — In Progress -->
+        <div class="cert-tile cert-planned cert-anim" style="--i:2">
           <div class="cert-img-wrap planned-wrap">
-            <div class="pdf-icon-display orange">
-              <i class="fas fa-crosshairs"></i>
+            <div class="planned-pulse">
+              <div class="planned-ring"></div>
+              <div class="pdf-icon-display orange"><i class="fas fa-crosshairs"></i></div>
             </div>
           </div>
           <div class="cert-tile-info">
@@ -346,15 +313,16 @@
         </div>
 
         <!-- OSCP — Planned -->
-        <div class="cert-tile cert-planned">
+        <div class="cert-tile cert-planned cert-anim" style="--i:3">
           <div class="cert-img-wrap planned-wrap">
-            <div class="pdf-icon-display red">
-              <i class="fas fa-user-secret"></i>
+            <div class="planned-pulse">
+              <div class="planned-ring red-ring"></div>
+              <div class="pdf-icon-display red"><i class="fas fa-user-secret"></i></div>
             </div>
           </div>
           <div class="cert-tile-info">
             <span class="cert-badge planned-badge">🎯 Planned</span>
-            <h3>OSCP — Offensive Security</h3>
+            <h3>OSCP — Offensive Security Certified Professional</h3>
             <p class="cert-issuer"><i class="fas fa-building"></i> Offensive Security</p>
           </div>
         </div>
