@@ -260,81 +260,117 @@
   <section id="certifications" class="section section-dark">
     <div class="container">
       <h2 class="section-title"><span class="accent">//</span> Certifications</h2>
-      <p class="section-sub">Academic achievements, professional courses & security certifications</p>
-      <div class="certs-grid">
+      <p class="section-sub">Verified achievements, courses & security certifications</p>
+      <div class="cert-gallery">
 
-        <div class="cert-card earned">
-          <div class="cert-glow"></div>
-          <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
-          <div class="cert-body">
-            <span class="cert-badge earned-badge">✓ Completed</span>
-            <h3>Ethical Hacking & Cybersecurity</h3>
-            <p class="cert-issuer"><i class="fas fa-university"></i> Softwarica College / Coventry University</p>
-            <p class="cert-desc">Comprehensive program covering network security, penetration testing,
-            digital forensics, cryptography and ethical hacking methodologies.</p>
+        <!-- CTF Certificate -->
+        <div class="cert-tile" onclick="openCert('certificates/CTF_Certificate.png')">
+          <div class="cert-img-wrap">
+            <img src="certificates/CTF_Certificate.png" alt="CTF Certificate" />
+            <div class="cert-overlay">
+              <i class="fas fa-expand"></i>
+              <span>View Certificate</span>
+            </div>
+          </div>
+          <div class="cert-tile-info">
+            <span class="cert-badge earned-badge">✓ Earned</span>
+            <h3>CTF Competition Certificate</h3>
+            <p class="cert-issuer"><i class="fas fa-flag"></i> CTF Event</p>
           </div>
         </div>
 
-        <div class="cert-card earned">
-          <div class="cert-glow"></div>
-          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
-          <div class="cert-body">
-            <span class="cert-badge earned-badge">✓ Completed</span>
-            <h3>TryHackMe — Pre-Security Path</h3>
-            <p class="cert-issuer"><i class="fas fa-flag"></i> TryHackMe</p>
-            <p class="cert-desc">Foundational cybersecurity training covering networking,
-            web security, Linux fundamentals and introductory pentesting.</p>
+        <!-- Splunk Certificate -->
+        <div class="cert-tile" onclick="openCert('certificates/splunk_page-0001.jpg')">
+          <div class="cert-img-wrap">
+            <img src="certificates/splunk_page-0001.jpg" alt="Splunk Certificate" />
+            <div class="cert-overlay">
+              <i class="fas fa-expand"></i>
+              <span>View Certificate</span>
+            </div>
+          </div>
+          <div class="cert-tile-info">
+            <span class="cert-badge earned-badge">✓ Earned</span>
+            <h3>Splunk Fundamentals</h3>
+            <p class="cert-issuer"><i class="fas fa-database"></i> Splunk</p>
           </div>
         </div>
 
-        <div class="cert-card progress">
-          <div class="cert-glow green"></div>
-          <div class="cert-icon green"><i class="fas fa-crosshairs"></i></div>
-          <div class="cert-body">
+        <!-- ADBI Cybersecurity PDF -->
+        <div class="cert-tile cert-pdf" onclick="openCert('certificates/Cybersecurity–ADBI-E-Learning.pdf')">
+          <div class="cert-img-wrap pdf-wrap">
+            <div class="pdf-icon-display">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="cert-overlay">
+              <i class="fas fa-file-pdf"></i>
+              <span>View Certificate</span>
+            </div>
+          </div>
+          <div class="cert-tile-info">
+            <span class="cert-badge earned-badge">✓ Earned</span>
+            <h3>Cybersecurity Fundamentals</h3>
+            <p class="cert-issuer"><i class="fas fa-university"></i> ADBI E-Learning</p>
+          </div>
+        </div>
+
+        <!-- GCED Certificate PDF -->
+        <div class="cert-tile cert-pdf" onclick="openCert('certificates/GCED certificate.pdf')">
+          <div class="cert-img-wrap pdf-wrap">
+            <div class="pdf-icon-display">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="cert-overlay">
+              <i class="fas fa-file-pdf"></i>
+              <span>View Certificate</span>
+            </div>
+          </div>
+          <div class="cert-tile-info">
+            <span class="cert-badge earned-badge">✓ Earned</span>
+            <h3>GCED Certificate</h3>
+            <p class="cert-issuer"><i class="fas fa-certificate"></i> GCED</p>
+          </div>
+        </div>
+
+        <!-- eJPT — Upcoming -->
+        <div class="cert-tile cert-planned">
+          <div class="cert-img-wrap planned-wrap">
+            <div class="pdf-icon-display orange">
+              <i class="fas fa-crosshairs"></i>
+            </div>
+          </div>
+          <div class="cert-tile-info">
             <span class="cert-badge progress-badge">⏳ In Progress</span>
-            <h3>eJPT — eLearnSecurity Junior Penetration Tester</h3>
+            <h3>eJPT — Junior Penetration Tester</h3>
             <p class="cert-issuer"><i class="fas fa-building"></i> INE / eLearnSecurity</p>
-            <p class="cert-desc">Entry-level penetration testing certification covering host
-            and network auditing, web application attacks, and reporting.</p>
           </div>
         </div>
 
-        <div class="cert-card planned">
-          <div class="cert-glow orange"></div>
-          <div class="cert-icon orange"><i class="fas fa-spider"></i></div>
-          <div class="cert-body">
-            <span class="cert-badge planned-badge">🎯 Planned</span>
-            <h3>BSCP — Burp Suite Certified Practitioner</h3>
-            <p class="cert-issuer"><i class="fas fa-building"></i> PortSwigger</p>
-            <p class="cert-desc">Professional web application security certification
-            validating skills in identifying and exploiting web vulnerabilities.</p>
+        <!-- OSCP — Planned -->
+        <div class="cert-tile cert-planned">
+          <div class="cert-img-wrap planned-wrap">
+            <div class="pdf-icon-display red">
+              <i class="fas fa-user-secret"></i>
+            </div>
           </div>
-        </div>
-
-        <div class="cert-card planned">
-          <div class="cert-glow orange"></div>
-          <div class="cert-icon orange"><i class="fas fa-user-secret"></i></div>
-          <div class="cert-body">
+          <div class="cert-tile-info">
             <span class="cert-badge planned-badge">🎯 Planned</span>
-            <h3>OSCP — Offensive Security Certified Professional</h3>
+            <h3>OSCP — Offensive Security</h3>
             <p class="cert-issuer"><i class="fas fa-building"></i> Offensive Security</p>
-            <p class="cert-desc">The gold standard in offensive security certifications.
-            Hands-on 24-hour practical exam testing real-world pentesting skills.</p>
-          </div>
-        </div>
-
-        <div class="cert-card add-cert" id="add-cert-hint">
-          <div class="cert-icon muted"><i class="fas fa-plus-circle"></i></div>
-          <div class="cert-body">
-            <h3>More Coming</h3>
-            <p class="cert-desc">Actively working toward new certifications.
-            This section will grow as I earn them.</p>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+
+  <!-- ░░ CERT LIGHTBOX ░░ -->
+  <div id="cert-lightbox" onclick="closeCert()">
+    <div class="lightbox-inner" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeCert()"><i class="fas fa-times"></i></button>
+      <img id="lightbox-img" src="" alt="" style="display:none"/>
+      <iframe id="lightbox-pdf" src="" style="display:none" width="100%" height="100%"></iframe>
+    </div>
+  </div>
 
   <!-- ░░ WRITEUPS / BLOG ░░ -->
   <section id="writeups" class="section">

@@ -574,6 +574,140 @@ body {
 .form-group input::placeholder,
 .form-group textarea::placeholder { color: var(--muted); }
 
+/* ── CERT GALLERY ── */
+.cert-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.cert-tile {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all .3s;
+  cursor: pointer;
+}
+.cert-tile:hover {
+  border-color: rgba(0,212,255,.4);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,212,255,.1);
+}
+.cert-tile.cert-planned { cursor: default; }
+.cert-tile.cert-planned:hover {
+  border-color: rgba(0,255,159,.2);
+  box-shadow: 0 16px 40px rgba(0,255,159,.05);
+}
+
+.cert-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: #0d1117;
+}
+.cert-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+}
+.cert-tile:hover .cert-img-wrap img { transform: scale(1.05); }
+
+.cert-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,212,255,.15);
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  opacity: 0;
+  transition: opacity .3s;
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: .8rem;
+}
+.cert-overlay i { font-size: 1.5rem; color: var(--accent); }
+.cert-tile:hover .cert-overlay { opacity: 1; }
+
+.pdf-wrap, .planned-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-icon-display {
+  width: 72px; height: 72px;
+  border-radius: 16px;
+  background: rgba(0,212,255,.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem;
+  color: var(--accent);
+}
+.pdf-icon-display.orange { background: rgba(225,99,40,.1); color: #e16328; }
+.pdf-icon-display.red    { background: rgba(218,54,51,.1);  color: var(--red); }
+
+.cert-tile-info {
+  padding: 1rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.cert-tile-info h3 { font-size: .9rem; font-weight: 600; }
+
+/* ── LIGHTBOX ── */
+#cert-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+#cert-lightbox.open { display: flex; }
+
+.lightbox-inner {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 900px;
+  height: 620px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#lightbox-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#lightbox-pdf {
+  border: none;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: .75rem; right: .75rem;
+  background: rgba(255,255,255,.1);
+  border: none;
+  color: white;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 10;
+  transition: background .2s;
+}
+.lightbox-close:hover { background: var(--red); }
+
 /* ── SECTION SUBTITLE ── */
 .section-sub {
   color: var(--muted);

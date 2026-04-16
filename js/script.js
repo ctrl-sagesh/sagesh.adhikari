@@ -94,6 +94,30 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// ── CERT LIGHTBOX ────────────────────────────
+function openCert(src) {
+  const lb  = document.getElementById('cert-lightbox');
+  const img = document.getElementById('lightbox-img');
+  const pdf = document.getElementById('lightbox-pdf');
+  if (src.endsWith('.pdf')) {
+    img.style.display = 'none';
+    pdf.style.display = 'block';
+    pdf.src = src;
+  } else {
+    pdf.style.display = 'none';
+    img.style.display = 'block';
+    img.src = src;
+  }
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeCert() {
+  document.getElementById('cert-lightbox').classList.remove('open');
+  document.getElementById('lightbox-pdf').src = '';
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCert(); });
+
 // ── CONTACT FORM ──────────────────────────────
 function handleSubmit(e) {
   e.preventDefault();
